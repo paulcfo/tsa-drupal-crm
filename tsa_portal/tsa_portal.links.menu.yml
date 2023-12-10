@@ -1,0 +1,6 @@
+tsa_portal.unmasquerade:
+  title: 'Unmasquerade'
+  menu_name: portal-top-menu
+  description: 'Switch back to your user account.'
+  route_name: masquerade.unmasquerade
+  weight: -50

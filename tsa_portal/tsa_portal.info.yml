@@ -1,0 +1,6 @@
+name: 'TSA Portal'
+type: module
+description: 'A portal for teachers and parents to manage students.'
+package: TSA
+core_version_requirement: ^10
+version: '1.0'

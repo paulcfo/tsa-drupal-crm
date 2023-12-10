@@ -1,0 +1,217 @@
+.corner {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.corner a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-family: metropolis, sans-serif;
+}
+
+.corner img {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  .col-lg-4 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* #student-table {
+    border-collapse: collapse;
+}
+
+#student-table th,
+#student-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#student-table th {
+    background-color: #eee;
+} */
+
+.box-wrapper {
+  margin: 0 -15px;
+}
+
+.box-wrapper .box {
+  width: 33.33%;
+  float: left;
+}
+
+.box-wrapper .box .box-inner-wrap {
+  border: 1px solid #eaf8fa;
+  margin: 15px;
+  text-align: center;
+  background: #eaf8fa;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.box-wrapper .box .box-inner-wrap a {
+  border: 1px solid #eaf8fa;
+  text-align: center;
+  background: #eaf8fa;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  display: block;
+  padding: 40px 15px;
+  color: #221e1f;
+  font-family: metropolis, sans-serif;
+}
+
+.field__label {
+  visibility: hidden;
+}
+
+/* .page-wrapper-ur {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* Styles for the results section sidebar */
+.sidebar-ur {
+  /* width: 30%; */
+  flex-shrink: 0;
+  background-color: aliceblue;
+  padding: 20px;
+  /* max-width: 350px; */
+}
+
+/* Styles for the results section content */
+.content-ur {
+  /* width: 70%; */
+  flex-shrink: 0;
+  padding: 20px;
+  background-color: #dee2e6;
+  /* max-width: 950px; */
+}
+
+.content-ur h6 {
+  text-align: center;
+}
+
+/* Styles for the results section content */
+#student-list-wrapper td {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* .col.auj {
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container.my-4.px-5 {
+    display: flex;
+  } */
+
+/* Base container styling */
+.container.my-4.px-5 {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  gap: 20px; /* Space between stacked items */
+}
+
+/* Base column styling */
+.col.auj {
+  border: 1px solid; /* Simplified border styling */
+  padding: 20px;
+  margin-bottom: 20px; /* Space below each column */
+  width: 100%; /* Full width for mobile */
+}
+
+/* Header within the column */
+.col.auj h5 {
+  margin-bottom: 15px;
+}
+
+/* Styles for medium devices and up */
+@media (min-width: 768px) {
+  .container.my-4.px-5 {
+    flex-direction: row; /* Side-by-side columns for wider screens */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .col.auj {
+    flex: 1; /* Allows columns to grow equally */
+    min-width: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin-right: 5px;
+  }
+}
+
+.views-field.views-field-title {
+  padding-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#mark-attendance-form {
+  background: aliceblue;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+#upload-results-form {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+#edit-semester-dropdown,
+#edit-result-type-dropdown {
+  display: flex;
+  gap: 20px;
+}
+
+.radios-title-ur span {
+  font-size: 16px;
+}
+
+.content-ur th {
+  font-size: 11.5px;
+}
+
+.content-ur .form-control {
+  font-size: 12px;
+  /* width: 60px;*/
+  /* text-align: center; */
+}
+
+.content-ur .form-select {
+  font-size: 12px;
+  width: 60px;
+  text-align: center;
+}
+
+.content-ur .student-name {
+  width: 140px;
+}
+
+#edit-dev-skils {
+    width: fit-content;
+}
+
+.courses-table .js-form-type-select {
+    width: fit-content;
+}
+
+#edit-resp, #edit-org, #edit-ind, #edit-coll, #edit-init {
+    width: fit-content;
+}

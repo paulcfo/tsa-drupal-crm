@@ -1,0 +1,25 @@
+
+<div class="container my-4 px-5">
+
+  <div class="row row-cols-2 g-4">
+    <div class="col auj">
+       <!-- Announcements -->
+       <h5>New Announcements</h5>
+      {{ drupal_view('announcements', 'announcements') }}
+    </div>
+    
+    <div class="col auj">
+       <!-- Upcoming Events -->
+       <h5>Upcoming Events</h5>
+      {{ drupal_view('announcements', 'upcoming_events') }}
+    </div>
+
+    <div class="col auj">
+      <!-- Job Openings -->
+      <h5>Job Openings</h5>
+      {{ drupal_view('announcements', 'job_block') }}
+    </div>
+
+  </div>
+
+</div>

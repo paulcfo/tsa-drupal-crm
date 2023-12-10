@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains tsa_portal.module.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function tsa_portal_help($route_name, $route_match) {
+  switch ($route_name) {
+    case 'help.page.tsa_portal':
+      return '<p>' . t('A portal for TSA academic services.') . '</p>';
+  }
+}
+
+/**
+ * attach libraries and return front page.
+ */
+function tsa_portal_theme($existing, $type, $theme, $path) {
+  return [
+    'portal_template' => [
+      'variables' => [
+        'user_name' => NULL,
+        'user_email' => NULL,
+      ],
+      'template' => 'portal-template',
+      'attached' => [
+        'library' => [
+          'tsa_portal/tsa_portal_libraries',
+        ],
+      ],
+    ],
+
+    // 'upload_results_form' => [
+    //   'variables' => [
+    //     'form' => NULL,
+    //   ],
+    //   'template' => 'upload-results-form',
+    // ],
+  ];
+}
+
+function tsa_portal_page_attachments(array &$attachments) {
+  // Get the current route.
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+
+  // Check if the current route starts with '/portal'.
+  if (strpos($path_alias, '/portal') === 0) {
+    // Attach the library.
+    $attachments['#attached']['library'][] = 'tsa_portal/tsa_portal_libraries';
+  }
+}

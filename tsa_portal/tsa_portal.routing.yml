@@ -1,0 +1,27 @@
+tsa_portal.portal:
+  path: '/portal'
+  defaults:
+    _controller: '\Drupal\tsa_portal\Controller\PortalController::portal'
+    _title: 'Portal'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+tsa_portal.mark_attendance_form:
+  path: '/portal/teachers-corner/mark-attendance'
+  defaults:
+    _form: '\Drupal\tsa_portal\Form\MarkAttendanceForm'
+    _title: 'Mark Attendance'
+  requirements:
+    _permission: 'access content'
+    _role: 'administrator+staff+director'
+
+tsa_portal.upload_results_form:
+  path: '/portal/teachers-corner/upload-results'
+  defaults:
+    _form: '\Drupal\tsa_portal\Form\UploadResultsForm'
+    _title: 'Upload Results'
+  requirements:
+    _permission: 'access content'
+    _role: 'administrator+staff+director'
+

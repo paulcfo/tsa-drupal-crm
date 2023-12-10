@@ -1,0 +1,17 @@
+tsa_portal_libraries:
+  js:
+    js/portal.js: {}
+  
+  css:
+    base:
+      css/portal.css: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
+    - core/drupal.ajax
+    - core/jquery.form
+    - core/jquery.cookie
+    - core/jquery.ui
+    - jquery_ui_datepicker/datepicker
